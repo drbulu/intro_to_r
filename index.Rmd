@@ -20,42 +20,46 @@ The only link that you really need to right down is here:
 <b>https://github.com/drbulu/intro_to_r</b>
 
 The entire presentation has been uploaded:  
-1. HTML:  
+1. HTML:  <b style="color:green">index.html</b>  
 2. PDF: 
 
 --- .class #id 
 
 ## Presentation Outline
 
-Background:  
-  a) What is R?  
-  b) What R its applications?  
-  c) Is it populR?   
-Set-R-Up  
-  a) Getting R  
-  b) Getting Rstudio   
-  c) ExtendR  
-ExemplR?  
-What R you waiting for?  
-R you curious?  
+What is R?  
+
+Where is R used?  
+
+Who R users?  
+
+Why use R?  
+
+How does R work?  
 
 --- .class #id 
 
-## Background: What is R?
+## What is R?
 
-1. R is a dialect/derivative of the language S
-2. 
+1. R is a dialect/derivative of the language S  
+2. Uses of R:  
 
-Data analysis
-Data mining
-Data Visualisation
+  a) Data analysis  
+  b) Data mining  
+  c) Data Visualisation  
 
-References:  
+3. Some characteristics of R: 
+
+  a) Open Source: Well supported platform  
+  b) Extensible: Via custom packages  
+
+More information:  
+
 http://en.wikipedia.org/wiki/R_%28programming_language%29
 
 --- .class #id 
 
-## Background: Where is R used?
+## Where is R used?
 
 Some Application Examples:  
 
@@ -85,7 +89,7 @@ More examples:
 
 --- .class #id 
 
-## Background: Who R users?
+## Who R users?
 
 R is designed to be used by people can be used by is suitable for skills lie across the entire programming skill spectrum from: 
 <ul>
@@ -94,18 +98,18 @@ R is designed to be used by people can be used by is suitable for skills lie acr
   <li>the highly skilled (<b>1337</b>)</li>  
 </ul>
 <b>Examples of target users include:</b>  
-1. scientists (of all kinds):  
-    a. life scientists  
-    b. data scientists  
-    c. social scientists  
-2. hobbyists and script junkies  
-3. anybody (I guess)  
-
+1) scientists (of all kinds):  
+<ul>
+  <li>a) life scientists</li>
+  <li>b) data scientists</li>
+  <li>c) social scientists</li>
+</ul>
+2) hobbyists and script junkies  
 <div align="center" ><b style="color:red" >in short... YOU!</b></div>
 
 --- .class #id 
 
-## Background: Who R users?
+## Who R users?
 
 R even has a journal..
 
@@ -115,7 +119,7 @@ R even has a journal..
 
 --- .class #id 
 
-## Background: Why use R?
+## Why use R?
 
 ### [KDNuggets 2014][link] Data Analysis sofware poll (Top 10)
 
@@ -134,7 +138,7 @@ R even has a journal..
 
 --- .class #id 
 
-## Background: Why use R?
+## Why use R?
  
 [RedMonk][redmonk] Programming Language Rankings (June 2014)  
    
@@ -150,24 +154,13 @@ Image Source: [revolutionanalytics.com][revanalytics1]
 
 --- .class #id 
 
-## Background: Why use R?
-
-Open Source  
-
-Well supported: A variety of packages for different purposes 
-
-Extensible:  
-
-
---- .class #id 
-
 ## Why use R?
 
 <div align="center" ><b style="color:green" >Example 1: ggplot2</b></div>
 
 [ggplot2][plotting_maddly] is a powerful data visualisation package for R.
 
-<img class=center src=./assets/img/pie_chart31.png />
+<img class=center src=./assets/img/pie_chart31.png height='250px' />
 
 [Example Source][pieface]
 
@@ -226,7 +219,7 @@ Extensible:
 
 ## Why use R?
 
-### Example 2: Slidify
+<div align="center" ><b style="color:green" >Example 2: Slidify</b></div>
 
 <img class=center src=./assets/img/slidify_pic.png height='300px' /><br/>
 
@@ -238,23 +231,17 @@ This presentation was made using slidify!
 
 ## Why use R?
 
-Example 3: bioinformatics
+<div align="center" ><b style="color:green" >Example 3: Bioinformatics</b></div>
 
-http://www.bioconductor.org/
+<img class=center src=./assets/img/logo_bioconductor.gif height='200px' /><br/>
 
-Examples of popular packages
-
-Proteomics: http://www.bioconductor.org/packages/release/data/experiment/html/RforProteomics.html
-
-
+link: *http://www.bioconductor.org/*
 
 --- .class #id 
 
 ## Why use R?
 
 ### My experience
-
-### Put this towards the end!
 
 1) R is a fully fledged environment with tons of features
 
@@ -280,8 +267,8 @@ A brief example of "Vectorised" operations
   print(x)
 ```
 
-Wikipedia
-R reference
+For more info:  
+http://cran.r-project.org/doc/manuals/r-release/R-intro.html#Vector-arithmetic
 
 --- .class #id 
 
@@ -310,36 +297,57 @@ just a little bit more depth
 
 ## How does R work?
 
-Caution: Baby steps alert!
+### Caution: Baby steps alert!
 
-This is a very basic look at how R works...  
+### This is a very basic look at how R works...  
 
-If you want to know more:  
-* explore  
-* lobby for a follow up workshop :)  
+### If you want to know more:  
+
+<h2 style="color:green">1) Explore</h2>
+
+<h2 style="color:red">2) lobby for follow up workshopz :)</h2>
 
 --- .class #id
 
 ## How to get started?
 
-Data Science
+Data Science (John Hopkins University):  
+1. Coursera Platform: https://www.coursera.org/specialization/jhudatascience/1/overview  
+2. Github: https://github.com/DataScienceSpecialization/courses  
 
-Coursera Platform: https://www.coursera.org/specialization/jhudatascience/1?utm_medium=listingPage
-Github: 
+Quick-R: http://www.statmethods.net/index.html  
 
-etc...
+R bloggers: http://www.r-bloggers.com/  
 
-Quick-R: http://www.statmethods.net/index.html
-http://www.r-bloggers.com/
+Markdown:  
+1. http://daringfireball.net/projects/markdown/syntax  
+2. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet  
 
---- .class #id 
-
-## Resources used in the making of this presentation?
-
-Markdown: http://daringfireball.net/projects/markdown/syntax
-
-http://kbroman.org/knitr_knutshell/
+KnitR basic tutorial:  http://kbroman.org/knitr_knutshell/
 
 etc...
 
+For more information see <b style="color:red;text-decoration:underline;" >Googlz of the interwebz!</b>
+
 --- .class #id 
+
+## What R you going to do next?
+
+<b style="color:red">i.e. where to from here?</b>  
+
+a) Follow the links  
+
+b) Ask someone who might know:  
+    i) the interwebz  
+        * google  
+        * Stack Overflow (1337 h3lp)  
+    ii) friendly p33pz  
+
+c) Play around... lots of training datasets available
+ 
+d) Apply it to your work ... one simple task at a time 
+
+--- .class #id
+
+
+<div align="center" ><h2 style="color:red;text-decoration:underline;" >Thank you!</h2></div>
