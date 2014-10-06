@@ -21,7 +21,7 @@ The only link that you really need to right down is here:
 
 The entire presentation has been uploaded:  
 1. HTML:  <b style="color:green">index.html</b>  
-2. PDF: 
+2. PDF: <b style="color:purple">create e.g. by printing in browser</b>  
 
 --- .class #id 
 
