@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>What R you on about?</title>
+  <meta charset="utf-8">
+  <meta name="description" content="What R you on about?">
+  <meta name="author" content="Bulukani Mlalazi">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>What R you on about?</h1>
+    <h2>Introduction to the wonderful world of R</h2>
+    <p>Bulukani Mlalazi<br/>Research Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>First up: A note to tha Skrybz!!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A small favour to those taking notes..</p>
+
+<p>The only link that you really need to right down is here:</p>
+
+<p><b><a href="https://github.com/drbulu/intro_to_r">https://github.com/drbulu/intro_to_r</a></b></p>
+
+<p>The entire presentation has been uploaded:<br>
+1. HTML:<br>
+2. PDF: </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Presentation Outline</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Background:<br>
+  a) What is R?<br>
+  b) What R its applications?<br>
+  c) Is it populR?<br>
+Set-R-Up<br>
+  a) Getting R<br>
+  b) Getting Rstudio<br>
+  c) ExtendR<br>
+ExemplR?<br>
+What R you waiting for?<br>
+R you curious?  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Background: What is R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>R is a dialect/derivative of the language S</li>
+<li></li>
+</ol>
+
+<p>Data analysis
+Data mining
+Data Visualisation</p>
+
+<p>References:<br>
+<a href="http://en.wikipedia.org/wiki/R_%28programming_language%29">http://en.wikipedia.org/wiki/R_%28programming_language%29</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Background: Where is R used?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Some Application Examples:  </p>
+
+<table>
+  <tr>
+    <td>Graphics and Visualizations</td>
+    <td><b>HighThroughput Genomics</b></td>
+  </tr>
+    <td>Environmental Studies</td>
+    <td><b>Medical Imaging</b></td>
+  <tr>
+    <td>Clinical Trials</td>
+    <td><b>Experimental Design</b></td>
+  </tr>
+  <tr>
+    <td>Graphics and Visualizations</td>
+    <td><b>High Performance Computing</b></td>
+  </tr>
+  <tr>
+    <td>Multivariate Statistics</td>
+    <td><b>Natural Language Processing</b></td>
+  </tr>  
+</table>  
+
+<p><br/>
+More examples:<br>
+  <a href="http://www.revolutionanalytics.com/applications-r">http://www.revolutionanalytics.com/applications-r</a>  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Background: Who R users?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>R is designed to be used by people can be used by is suitable for skills lie across the entire programming skill spectrum from: </p>
+
+<ul>
+  <li>non-programmers (<b>n00bs</b>)</li>  
+  <li><b style="color:orange" >everyone in between</b></li>
+  <li>the highly skilled (<b>1337</b>)</li>  
+</ul>
+
+<p><b>Examples of target users include:</b><br>
+1. scientists (of all kinds):<br>
+    a. life scientists<br>
+    b. data scientists<br>
+    c. social scientists<br>
+2. hobbyists and script junkies<br>
+3. anybody (I guess)  </p>
+
+<div align="center" ><b style="color:red" >in short... YOU!</b></div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Background: Who R users?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>R even has a journal..</p>
+
+<p><img class=center src=./assets/img/rjournal_pic.png height='400px' /><br/></p>
+
+<p><a href="http://journal.r-project.org/">http://journal.r-project.org/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Background: Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3><a href="http://www.kdnuggets.com/polls/2014/analytics-data-mining-data-science-software-used.html">KDNuggets 2014</a> Data Analysis sofware poll (Top 10)</h3>
+
+<ol>
+<li>RapidMiner, 44.2% share (39.2% in 2013)</li>
+<li><b>R</b>, <b>38.5%</b> ( 37.4% in 2013)</li>
+<li>Excel, 25.8% ( 28.0% in 2013)</li>
+<li>SQL, 25.3% ( na in 2013)<br></li>
+<li>Python, 19.5% ( 13.3% in 2013)<br></li>
+<li>Weka, 17.0% ( 14.3% in 2013)</li>
+<li>KNIME, 15.0% ( 5.9% in 2013)</li>
+<li>Hadoop, 12.7% ( 9.3% in 2013)</li>
+<li>SAS base, 10.9% ( 10.7% in 2013)</li>
+<li>Microsoft SQL Server, 10.5% (7.0% in 2013) </li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Background: Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a href="http://redmonk.com/sogrady/2014/06/13/language-rankings-6-14/">RedMonk</a> Programming Language Rankings (June 2014)  </p>
+
+<p><img class=center src=./assets/img/redmonk_popular.png height='300px' /><br/></p>
+
+<p>Image Source: <a href="http://blog.revolutionanalytics.com/2014/06/r-popularity-update.html">revolutionanalytics.com</a>  </p>
+
+<p><span style="color:green;" >Yet <em>another</em> nice comparison can be found </span> <a href="http://r4stats.com/articles/popularity/">here</a>!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Background: Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Open Source  </p>
+
+<p>Well supported: A variety of packages for different purposes </p>
+
+<p>Extensible:  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center" ><b style="color:green" >Example 1: ggplot2</b></div>
+
+<p><a href="http://ggplot2.org/">ggplot2</a> is a powerful data visualisation package for R.</p>
+
+<p><img class=center src=./assets/img/pie_chart31.png /></p>
+
+<p><a href="http://www.r-bloggers.com/pie-charts-in-ggplot2/">Example Source</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <div align="center" ><b style="color:green" >Example 1: some ggplot2 pictures</b></div>
+
+<table>
+  <tr>
+    <th>
+      <a href="http://www.r-bloggers.com/u-s-unemployment-data-animated-choropleth-maps/" >Unemployment in Greenland! (USA)
+      <a/>
+    </th>
+    <th>
+      <a href="http://www.r-bloggers.com/bp-oil-and-gas-recovery/" >Oil and Gas chart<a/>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <img class=center src=./assets/img/2010_unemployment.png width='400px'/>
+    </td>
+    <td>
+      <img class=center src=./assets/img/BP_oil_and_gas_recovery.png width='400px'/>
+    </td>
+  </tr>
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <div align="center" ><b style="color:green" >Example 1: more ggplot2 pictures</b></div>
+
+<table style="border: 1px solid black;border-collapse: collapse;">
+  <tr>
+    <th>
+      <a href="http://www.r-bloggers.com/displaying-data-using-level-plots/" >Using Level Plots
+      <a/>
+    </th>
+    <th>
+      <a href="http://www.r-bloggers.com/summarising-data-using-histograms/" >Using Histograms<a/>
+    </th>
+  <tr>
+  <tr>
+    <td>
+      <img class=center src=./assets/img/levelplot-ggplot2-300x300.jpg />
+    </td>
+    <td>
+      <img class=center src=./assets/img/histogram-ggplot2-300x300.jpg />
+    </td>
+  </tr>
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Example 2: Slidify</h3>
+
+<p><img class=center src=./assets/img/slidify_pic.png height='300px' /><br/></p>
+
+<p>link: <em><a href="http://slidify.org/">http://slidify.org/</a></em></p>
+
+<p>This presentation was made using slidify!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Example 3: bioinformatics?
+Examples of popular packages</p>
+
+<p>==link</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Example 4: proteomics or some other?
+Examples of popular packages</p>
+
+<p>==link</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>List of links to get popular packages...</p>
+
+<p>A variety of packages for different purposes</p>
+
+<p>With all this variety... why not</p>
+
+<p>Excel vs R. IMHO</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why use R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>My experience</h3>
+
+<h3>Put this towards the end!</h3>
+
+<p>1) R is a fully fledged environment with tons of features</p>
+
+<p>2) I prefer to use R over Excel whenever I can… it is usually just a matter of working out how to get the desired outcome in R  </p>
+
+<p>3) R is much better for automation IMHO  </p>
+
+<p>4) However, don’t get carried away. Every system has pros and cons… choose what works best for your </p>
+
+<h1>a) data analysis needs</h1>
+
+<h1>b) IT skill level</h1>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How does R work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A brief example of &quot;Vectorised&quot; operations</p>
+
+<pre><code class="r">  x = c(1:5);
+  x
+</code></pre>
+
+<pre><code>## [1] 1 2 3 4 5
+</code></pre>
+
+<pre><code class="r">  print(x)
+</code></pre>
+
+<pre><code>## [1] 1 2 3 4 5
+</code></pre>
+
+<p>Wikipedia
+R reference</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How does R work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>a little bit more depth</p>
+
+<pre><code class="r">  y &lt;- x + 1; y
+</code></pre>
+
+<pre><code>## [1] 2 3 4 5 6
+</code></pre>
+
+<pre><code class="r">  length(y)
+</code></pre>
+
+<pre><code>## [1] 5
+</code></pre>
+
+<pre><code class="r">  y[2]  
+</code></pre>
+
+<pre><code>## [1] 3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How does R work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>just a little bit more depth</p>
+
+<pre><code class="r">  z &lt;- (x * 10) + y ; z
+</code></pre>
+
+<pre><code>## [1] 12 23 34 45 56
+</code></pre>
+
+<pre><code class="r">  z[length(z)]
+</code></pre>
+
+<pre><code>## [1] 56
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How does R work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Caution: Baby steps alert!</p>
+
+<p>This is a very basic look at how R works...  </p>
+
+<p>If you want to know more:  </p>
+
+<ul>
+<li>explore<br></li>
+<li>lobby for a follow up workshop :)<br></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to get started?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Coursera:</p>
+
+<p>etc...</p>
+
+<p>Quick-R: <a href="http://www.statmethods.net/index.html">http://www.statmethods.net/index.html</a>
+<a href="http://www.r-bloggers.com/">http://www.r-bloggers.com/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Resources used in the making of this presentation?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Markdown: <a href="http://daringfireball.net/projects/markdown/syntax">http://daringfireball.net/projects/markdown/syntax</a></p>
+
+<p><a href="http://kbroman.org/knitr_knutshell/">http://kbroman.org/knitr_knutshell/</a></p>
+
+<p>etc...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='First up: A note to tha Skrybz!!'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Presentation Outline'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Background: What is R?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Background: Where is R used?'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Background: Who R users?'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Background: Who R users?'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Background: Why use R?'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Background: Why use R?'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Background: Why use R?'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Why use R?'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title=''>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title=''>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Why use R?'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Why use R?'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Why use R?'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Why use R?'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Why use R?'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='How does R work?'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='How does R work?'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='How does R work?'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='How does R work?'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='How to get started?'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Resources used in the making of this presentation?'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title=''>
+         24
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

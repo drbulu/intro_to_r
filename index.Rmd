@@ -1,0 +1,345 @@
+---
+title       : What R you on about?
+subtitle    : Introduction to the wonderful world of R
+author      : Bulukani Mlalazi
+job         : Research Scientist
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## First up: A note to tha Skrybz!!
+
+A small favour to those taking notes..
+
+The only link that you really need to right down is here:
+
+<b>https://github.com/drbulu/intro_to_r</b>
+
+The entire presentation has been uploaded:  
+1. HTML:  
+2. PDF: 
+
+--- .class #id 
+
+## Presentation Outline
+
+Background:  
+  a) What is R?  
+  b) What R its applications?  
+  c) Is it populR?   
+Set-R-Up  
+  a) Getting R  
+  b) Getting Rstudio   
+  c) ExtendR  
+ExemplR?  
+What R you waiting for?  
+R you curious?  
+
+--- .class #id 
+
+## Background: What is R?
+
+1. R is a dialect/derivative of the language S
+2. 
+
+Data analysis
+Data mining
+Data Visualisation
+
+References:  
+http://en.wikipedia.org/wiki/R_%28programming_language%29
+
+--- .class #id 
+
+## Background: Where is R used?
+
+Some Application Examples:  
+
+<table>
+  <tr>
+    <td>Graphics and Visualizations</td>
+    <td><b>HighThroughput Genomics</b></td>
+  </tr>
+    <td>Environmental Studies</td>
+    <td><b>Medical Imaging</b></td>
+  <tr>
+    <td>Clinical Trials</td>
+    <td><b>Experimental Design</b></td>
+  </tr>
+  <tr>
+    <td>Graphics and Visualizations</td>
+    <td><b>High Performance Computing</b></td>
+  </tr>
+  <tr>
+    <td>Multivariate Statistics</td>
+    <td><b>Natural Language Processing</b></td>
+  </tr>  
+</table>  
+<br/>
+More examples:  
+  http://www.revolutionanalytics.com/applications-r  
+
+--- .class #id 
+
+## Background: Who R users?
+
+R is designed to be used by people can be used by is suitable for skills lie across the entire programming skill spectrum from: 
+<ul>
+  <li>non-programmers (<b>n00bs</b>)</li>  
+  <li><b style="color:orange" >everyone in between</b></li>
+  <li>the highly skilled (<b>1337</b>)</li>  
+</ul>
+<b>Examples of target users include:</b>  
+1. scientists (of all kinds):  
+    a. life scientists  
+    b. data scientists  
+    c. social scientists  
+2. hobbyists and script junkies  
+3. anybody (I guess)  
+
+<div align="center" ><b style="color:red" >in short... YOU!</b></div>
+
+--- .class #id 
+
+## Background: Who R users?
+
+R even has a journal..
+
+  <img class=center src=./assets/img/rjournal_pic.png height='400px' /><br/>
+
+  http://journal.r-project.org/
+
+--- .class #id 
+
+## Background: Why use R?
+
+### [KDNuggets 2014][link] Data Analysis sofware poll (Top 10)
+
+1. RapidMiner, 44.2% share (39.2% in 2013)
+2. <b>R</b>, <b>38.5%</b> ( 37.4% in 2013)
+3. Excel, 25.8% ( 28.0% in 2013)
+4. SQL, 25.3% ( na in 2013)  
+5. Python, 19.5% ( 13.3% in 2013)  
+6. Weka, 17.0% ( 14.3% in 2013)
+7. KNIME, 15.0% ( 5.9% in 2013)
+8. Hadoop, 12.7% ( 9.3% in 2013)
+9. SAS base, 10.9% ( 10.7% in 2013)
+10. Microsoft SQL Server, 10.5% (7.0% in 2013) 
+
+[link]: http://www.kdnuggets.com/polls/2014/analytics-data-mining-data-science-software-used.html
+
+--- .class #id 
+
+## Background: Why use R?
+ 
+[RedMonk][redmonk] Programming Language Rankings (June 2014)  
+   
+<img class=center src=./assets/img/redmonk_popular.png height='300px' /><br/>
+
+Image Source: [revolutionanalytics.com][revanalytics1]  
+
+<span style="color:green;" >Yet *another* nice comparison can be found </span> [here][r4stats]!
+
+[revanalytics1]: http://blog.revolutionanalytics.com/2014/06/r-popularity-update.html
+[redmonk]: http://redmonk.com/sogrady/2014/06/13/language-rankings-6-14/
+[r4stats]: http://r4stats.com/articles/popularity/
+
+--- .class #id 
+
+## Background: Why use R?
+
+Open Source  
+
+Well supported: A variety of packages for different purposes 
+
+Extensible:  
+
+
+--- .class #id 
+
+## Why use R?
+
+<div align="center" ><b style="color:green" >Example 1: ggplot2</b></div>
+
+[ggplot2][plotting_maddly] is a powerful data visualisation package for R.
+
+<img class=center src=./assets/img/pie_chart31.png />
+
+[Example Source][pieface]
+
+[pieface]: http://www.r-bloggers.com/pie-charts-in-ggplot2/
+[plotting_maddly]: http://ggplot2.org/  
+
+--- .class #id 
+
+<div align="center" ><b style="color:green" >Example 1: some ggplot2 pictures</b></div>
+
+<table>
+  <tr>
+    <th>
+      <a href="http://www.r-bloggers.com/u-s-unemployment-data-animated-choropleth-maps/" >Unemployment in Greenland! (USA)
+      <a/>
+    </th>
+    <th>
+      <a href="http://www.r-bloggers.com/bp-oil-and-gas-recovery/" >Oil and Gas chart<a/>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <img class=center src=./assets/img/2010_unemployment.png width='400px'/>
+    </td>
+    <td>
+      <img class=center src=./assets/img/BP_oil_and_gas_recovery.png width='400px'/>
+    </td>
+  </tr>
+</table>
+
+--- .class #id 
+
+<div align="center" ><b style="color:green" >Example 1: more ggplot2 pictures</b></div>
+
+<table style="border: 1px solid black;border-collapse: collapse;">
+  <tr>
+    <th>
+      <a href="http://www.r-bloggers.com/displaying-data-using-level-plots/" >Using Level Plots
+      <a/>
+    </th>
+    <th>
+      <a href="http://www.r-bloggers.com/summarising-data-using-histograms/" >Using Histograms<a/>
+    </th>
+  <tr>
+  <tr>
+    <td>
+      <img class=center src=./assets/img/levelplot-ggplot2-300x300.jpg />
+    </td>
+    <td>
+      <img class=center src=./assets/img/histogram-ggplot2-300x300.jpg />
+    </td>
+  </tr>
+</table>
+
+--- .class #id 
+
+## Why use R?
+
+### Example 2: Slidify
+
+<img class=center src=./assets/img/slidify_pic.png height='300px' /><br/>
+
+link: *http://slidify.org/*
+
+This presentation was made using slidify!
+
+--- .class #id 
+
+## Why use R?
+
+Example 3: bioinformatics
+
+http://www.bioconductor.org/
+
+Examples of popular packages
+
+Proteomics: http://www.bioconductor.org/packages/release/data/experiment/html/RforProteomics.html
+
+
+
+--- .class #id 
+
+## Why use R?
+
+### My experience
+
+### Put this towards the end!
+
+1) R is a fully fledged environment with tons of features
+
+2) I prefer to use R over Excel whenever I can… it is usually just a matter of working out how to get the desired outcome in R  
+
+3) R is much better for data analysis automation IMHO  
+
+4) However, don’t get carried away. Every system has pros and cons… choose what works best for your 
+
+#   a) data analysis needs   
+#   b) IT skill level   
+
+
+--- .class #id 
+
+## How does R work?
+
+A brief example of "Vectorised" operations
+
+```{r}
+  x = c(1:5);
+  x
+  print(x)
+```
+
+Wikipedia
+R reference
+
+--- .class #id 
+
+## How does R work?
+
+a little bit more depth
+
+```{r}
+  y <- x + 1; y
+  length(y)
+  y[2]  
+```
+
+--- .class #id 
+
+## How does R work?
+
+just a little bit more depth
+
+```{r}
+  z <- (x * 10) + y ; z
+  z[length(z)]
+```
+
+--- .class #id 
+
+## How does R work?
+
+Caution: Baby steps alert!
+
+This is a very basic look at how R works...  
+
+If you want to know more:  
+* explore  
+* lobby for a follow up workshop :)  
+
+--- .class #id
+
+## How to get started?
+
+Data Science
+
+Coursera Platform: https://www.coursera.org/specialization/jhudatascience/1?utm_medium=listingPage
+Github: 
+
+etc...
+
+Quick-R: http://www.statmethods.net/index.html
+http://www.r-bloggers.com/
+
+--- .class #id 
+
+## Resources used in the making of this presentation?
+
+Markdown: http://daringfireball.net/projects/markdown/syntax
+
+http://kbroman.org/knitr_knutshell/
+
+etc...
+
+--- .class #id 
